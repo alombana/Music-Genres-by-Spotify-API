@@ -4,60 +4,267 @@
 #
 #    pip-compile requirements-dev.in
 #
+altair==5.3.0
+    # via streamlit
+annotated-types==0.6.0
+    # via pydantic
+appdirs==1.4.4
+    # via pygwalker
+arrow==1.3.0
+    # via pygwalker
+astor==0.8.1
+    # via pygwalker
+asttokens==2.4.1
+    # via stack-data
+attrs==23.2.0
+    # via
+    #   jsonschema
+    #   referencing
+backend==0.2.4.1
+    # via -r requirements-dev.in
+backoff==2.2.1
+    # via
+    #   kanaries-track
+    #   segment-analytics-python
+blinker==1.7.0
+    # via streamlit
+cachetools==5.3.3
+    # via
+    #   pygwalker
+    #   streamlit
 certifi==2024.2.2
     # via requests
 charset-normalizer==3.3.2
     # via requests
+click==8.1.7
+    # via streamlit
+comm==0.2.2
+    # via ipywidgets
 contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
+dateutils==0.6.12
+    # via kanaries-track
+decorator==5.1.1
+    # via ipython
+duckdb==0.10.1
+    # via pygwalker
+executing==2.0.1
+    # via stack-data
 fonttools==4.51.0
     # via matplotlib
+gitdb==4.0.11
+    # via gitpython
+gitpython==3.1.43
+    # via streamlit
+gw-dsl-parser==0.1.47
+    # via pygwalker
 idna==3.7
     # via requests
+ipython==8.23.0
+    # via
+    #   ipywidgets
+    #   pygwalker
+ipywidgets==8.1.2
+    # via pygwalker
+jedi==0.19.1
+    # via ipython
+jinja2==3.1.3
+    # via
+    #   altair
+    #   pydeck
+    #   pygwalker
+joblib==1.4.0
+    # via scikit-learn
+jsonschema==4.21.1
+    # via altair
+jsonschema-specifications==2023.12.1
+    # via jsonschema
+jupyterlab-widgets==3.0.10
+    # via ipywidgets
+kanaries-track==0.0.4
+    # via pygwalker
 kiwisolver==1.4.5
     # via matplotlib
+load-dotenv==0.1.0
+    # via -r requirements-dev.in
+markdown-it-py==3.0.0
+    # via rich
+markupsafe==2.1.5
+    # via jinja2
 matplotlib==3.8.4
-    # via seaborn
+    # via
+    #   -r requirements-dev.in
+    #   seaborn
+matplotlib-inline==0.1.7
+    # via ipython
+mdurl==0.1.2
+    # via markdown-it-py
+monotonic==1.6
+    # via segment-analytics-python
 numpy==1.26.4
     # via
     #   -r requirements-dev.in
+    #   altair
     #   contourpy
     #   matplotlib
     #   pandas
+    #   pyarrow
+    #   pydeck
+    #   scikit-learn
+    #   scipy
     #   seaborn
+    #   streamlit
 packaging==24.0
     # via
+    #   altair
     #   matplotlib
-    #   plotly
+    #   pygwalker
+    #   streamlit
 pandas==2.2.2
     # via
     #   -r requirements-dev.in
+    #   altair
+    #   pygwalker
     #   seaborn
+    #   streamlit
+parso==0.8.4
+    # via jedi
+pexpect==4.9.0
+    # via ipython
 pillow==10.3.0
-    # via matplotlib
-plotly==5.20.0
+    # via
+    #   matplotlib
+    #   streamlit
+prompt-toolkit==3.0.43
+    # via ipython
+protobuf==4.25.3
+    # via streamlit
+psutil==5.9.8
+    # via pygwalker
+ptyprocess==0.7.0
+    # via pexpect
+pure-eval==0.2.2
+    # via stack-data
+pyarrow==15.0.2
+    # via
+    #   pygwalker
+    #   streamlit
+pydantic==2.7.0
+    # via pygwalker
+pydantic-core==2.18.1
+    # via pydantic
+pydeck==0.8.1b0
+    # via streamlit
+pygments==2.17.2
+    # via
+    #   ipython
+    #   rich
+pygwalker==0.4.8
     # via -r requirements-dev.in
 pyparsing==3.1.2
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via
+    #   arrow
+    #   dateutils
     #   matplotlib
     #   pandas
+    #   segment-analytics-python
+python-dotenv==1.0.1
+    # via load-dotenv
 pytz==2024.1
-    # via pandas
+    # via
+    #   dateutils
+    #   pandas
+    #   pygwalker
+redis==5.0.3
+    # via spotipy
+referencing==0.34.0
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
 regex==2023.12.25
     # via -r requirements-dev.in
 requests==2.31.0
+    # via
+    #   -r requirements-dev.in
+    #   kanaries-track
+    #   pygwalker
+    #   segment-analytics-python
+    #   spotipy
+    #   streamlit
+rich==13.7.1
+    # via streamlit
+rpds-py==0.18.0
+    # via
+    #   jsonschema
+    #   referencing
+scikit-learn==1.4.2
     # via -r requirements-dev.in
+scipy==1.13.0
+    # via
+    #   -r requirements-dev.in
+    #   scikit-learn
 seaborn==0.13.2
     # via -r requirements-dev.in
+segment-analytics-python==2.2.3
+    # via pygwalker
 six==1.16.0
-    # via python-dateutil
+    # via
+    #   asttokens
+    #   python-dateutil
+    #   spotipy
+smmap==5.0.1
+    # via gitdb
+spotipy==2.23.0
+    # via -r requirements-dev.in
+sqlalchemy==2.0.29
+    # via pygwalker
+sqlglot==23.10.0
+    # via pygwalker
+stack-data==0.6.3
+    # via ipython
+streamlit==1.33.0
+    # via -r requirements-dev.in
 tenacity==8.2.3
-    # via plotly
+    # via streamlit
+threadpoolctl==3.4.0
+    # via scikit-learn
+toml==0.10.2
+    # via streamlit
+toolz==0.12.1
+    # via altair
+tornado==6.4
+    # via streamlit
+traitlets==5.14.2
+    # via
+    #   comm
+    #   ipython
+    #   ipywidgets
+    #   matplotlib-inline
+types-python-dateutil==2.9.0.20240316
+    # via arrow
+typing-extensions==4.11.0
+    # via
+    #   ipython
+    #   pydantic
+    #   pydantic-core
+    #   pygwalker
+    #   sqlalchemy
+    #   streamlit
 tzdata==2024.1
     # via pandas
 urllib3==2.2.1
-    # via requests
+    # via
+    #   requests
+    #   spotipy
+wasmtime==12.0.0
+    # via gw-dsl-parser
+watchdog==4.0.0
+    # via -r requirements-dev.in
+wcwidth==0.2.13
+    # via prompt-toolkit
+widgetsnbextension==4.0.10
+    # via ipywidgets

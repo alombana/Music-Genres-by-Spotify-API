@@ -4,3 +4,5 @@ requirements-dev.in
 requirements.in
 env_3
 .DS_Store
+.env
+trial.csv
