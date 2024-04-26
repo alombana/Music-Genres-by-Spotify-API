@@ -1,0 +1,29 @@
+MUSIC GENRES BY SPOTIFY API
+
+The idea of this projects is helping artist to check which genres are the most populars, how their popularity in terms of song per genres has changes through the years. And how the popularity of the artist also affect the genres.
+
+DESCRIPTION:
+The initial idea apart of getting insight from the data was try to predict the most popular genres for the next five years. But after cleaning and analyzing the data. I fount out that there were not enough variables that count with a strong relationship with the variable to be predicted.
+
+CHALLENGES: Timeframe. Some restrictions from Spotify. Information missing as "popularity of the artist through the years" that could contribute to the model or "countries". 
+
+CONTENT:
+* Data: The data downloaded from Spotify Web API. The files named "info_..." Are the original data downloaded
+
+	Note: The data used, included the 10 most populars song by artist that are in Spotify, from 1960 until now (17.04.2024)
+
+* Slides: A presentation about the findings and Link to Tableau (where you can find some graphics). The Link to Streamlit does not work because I have not deployed it. This is because Spotify's terms and rules does not allow it to create an App. (Still checking in it)
+
+* Notebooks: You can find the Jupyter notebooks, where the code of how the data was downloaded, cleaned and organized are showed. There you can file how the machine learning model was done and the results of it in the file named " ML-model"
+
+*Streamlit: Although I have not deployed the dashboard, you can find here the code
+
+Note: You can also check the txt files of requirements, where you can see the libraries used. 
+
+HOW YOU CAN USE IT?
+Feel free to download the CSV file with the data clean or the code for downloading more information. But for this last one, you will need to create a account in Spotify Web API
+
+CREDITS:
+Spotify Web API
+
+Last note: I will continue improving this project!
